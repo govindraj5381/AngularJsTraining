@@ -3,13 +3,11 @@ var myapp = angular.module('myapp', [])
 
 myapp.controller('Myctrl',['$scope','AppService', function($scope, AppService){
     $scope.myval = "Hello";
-    
+
+    $scope.name = "MyName";
  AppService.getStudents().then(function(result)
 {
-    $scope.students=result.data.map(function(item){
-        item.seniority = item.age > 10 ? "S" : "J";
-        return item; 
-    });
+    $scope.students = result;
 })
     $scope.onViewBtnClick = function(student){
         //alert("button clicked")
