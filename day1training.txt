@@ -1,0 +1,32 @@
+   var students = [
+        {
+            name : 'Ram',
+            age : 10
+        },
+        {
+            name : 'kumar',
+            age : 15
+        }
+    ];
+
+git add .
+git commit -m "some msg"
+git push origin master
+
+$q - for custom promise
+
+For service/ browser running
+npm install -g http-server
+http-server
+
+
+components
+
+bindings - from parent to child pass data
+
+
+<div ng-show="selectedstudent">
+           <h2> student details</h2>
+           <p>Name : {{selectedstudent.name}}</p>
+           <p>Age : {{selectedstudent.age}}</p>
+       </div>
