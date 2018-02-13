@@ -7,8 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-
+<student-details my-title="Hello">
+</student-details>
+<student-details my-title="Hi">
+    </student-details>
    <div ng-controller="Myctrl">
+        <student-details current-student ="selectedstudent" my-title="Student 1 details">
+            </student-details>
        <div>{{name | lowercase}}</div>
        <div>{{name | uppercase}}</div>
        <div>{{name}}</div>
@@ -32,11 +37,7 @@
                </tr>
            </tbody>
        </table>
-       <div ng-show="selectedstudent">
-           <h2> student details</h2>
-           <p>Name : {{selectedstudent.name}}</p>
-           <p>Age : {{selectedstudent.age}}</p>
-       </div>
+     
    </div>
 
         
@@ -47,5 +48,6 @@
     <script src="app.js"></script>
     <script src="app.service.js"></script>
     <script src="app.filter.js"></script>
+    <script src="app.component.js"></script>
 </body>
 </html>
