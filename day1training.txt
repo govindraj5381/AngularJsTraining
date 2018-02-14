@@ -9,6 +9,7 @@
         }
     ];
 
+for cloning - git clone url
 git add .
 git commit -m "some msg"
 git push origin master
@@ -19,7 +20,7 @@ For service/ browser running
 npm install -g http-server
 http-server
 
-
+angular js is framework
 components
 
 bindings - from parent to child pass data
