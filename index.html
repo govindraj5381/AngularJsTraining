@@ -11,6 +11,8 @@
 </student-details>
 <student-details my-title="Hi">
     </student-details>
+
+    <ui-view></ui-view>
    <div ng-controller="Myctrl">
         <student-details current-student ="selectedstudent" my-title="Student 1 details">
             </student-details>
@@ -45,6 +47,7 @@
 
     
     <script src="angular.js"></script>
+    <script src="angular-ui-router.js"></script>
     <script src="app.js"></script>
     <script src="app.service.js"></script>
     <script src="app.filter.js"></script>

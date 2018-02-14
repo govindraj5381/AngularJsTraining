@@ -1,5 +1,21 @@
-var myapp = angular.module('myapp', [])
+var myapp = angular.module('myapp', ['ui.router'])
 //console.log(myapp)
+
+myapp.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlRouterProvider){
+
+    $stateProvider.state({
+        name : 'home',
+        url : '/home',
+        component: 'homepage'
+    });
+
+    $stateProvider.state({
+        name : 'about',
+        url : '/about',
+        component: 'aboutpage'
+    });
+    $urlRouterProvider.otherwise('/home');
+}]);
 
 myapp.controller('Myctrl',['$scope','AppService', function($scope, AppService){
     $scope.myval = "Hello";

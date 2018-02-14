@@ -9,3 +9,12 @@ bindings :{
 controller : [function(){
     this.myname = "custom component"
 }]});
+
+myapp.component('homepage',{
+    template : '<div> this is home page from component</div>'
+});
+
+
+myapp.component('aboutpage',{
+    template : '<div> this is about page from component</div>'
+});
